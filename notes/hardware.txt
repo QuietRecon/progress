@@ -1,0 +1,26 @@
+A small “hardware recon” cheat sheet
+This can save many minutes of googling.
+
+lscpu (CPU, cores, threads, architecture. cache, virtualisation)
+
+free -h (Ram usage)
+
+sudo dmidecode -t memory (RAM slots, speed, size and uupgradeability)
+
+sudo dmidecode -t cpy (Detailed CPU information)
+
+sudo dmidecode -t baseboard (Detailed motherboard information)
+
+lspci (PCI devices like CPU, Wi-Fi, NVMe controller, USB controller)
+
+lsusb (USB devices)
+
+lsblk (Storage device and partitions)
+
+sudo lshw -short (Overall hardware summary)
+
+ip addr (Network interfaces)
+
+ip link (Network adapters and state)
+
+sudo smartctl -a /dev/nvme0n1 (SSD heath information)
